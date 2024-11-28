@@ -1,0 +1,41 @@
+/* hero.css */
+
+
+
+/*   text styleing animation */
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(0.5s); /* Start from the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInFromRight 0.5s ease forwards; /* Duration of the animation */
+  opacity: 0; /* Ensure it's hidden initially */
+}
+
+/* Add delay classes for staggered animations */
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+

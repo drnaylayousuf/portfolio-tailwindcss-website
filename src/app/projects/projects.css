@@ -1,0 +1,27 @@
+/* Fade-in animation */
+.fade-in-delay-1 {
+    animation: fadeIn 1.5s ease-out 1s forwards; /* Delay of 1 second for heading */
+}
+
+.fade-in-delay-2 {
+    animation: fadeIn 1.5s ease-out 2s forwards; /* Delay of 2 seconds for paragraph */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+
+/* Add this to your CSS file */
+.bg-mint-green {
+    background-color: #98ff98; /* Mint green color */
+}

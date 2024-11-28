@@ -1,0 +1,71 @@
+/* styles.css or page.module.css */
+
+@keyframes spinEarth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-earth {
+  animation: spinEarth 10s linear infinite;
+}
+
+/* */
+
+
+
+/* styles.css */
+
+/* Keyframe animation for the fade-in and downward movement effect */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95); /* Starts with opacity 0 and moves up slightly */
+    color: #ffffff; /* Initial color (white) */
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px) scale(1); /* Moves downward slightly */
+    color: #FF2436; /* Midway color (amber) */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(30px) scale(1); /* Moves down further */
+    color: #d68d93; /* Final color (red) */
+  }
+}
+
+/* Apply animation to the main heading */
+.animate-fadeInText {
+  animation: fadeInText 2s ease-in-out forwards;
+}
+
+/* Webkit prefix for smooth transitions in older browsers (especially Safari) */
+@-webkit-keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+    color: #ffffff;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px) scale(1);
+    color: #c94953;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(30px) scale(1);
+    color: #FF2436;
+  }
+}
+
+.animate-fadeInText {
+  -webkit-animation: fadeInText 2s ease-in-out forwards;
+  animation: fadeInText 2s ease-in-out forwards;
+}
+
+
+
